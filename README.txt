@@ -15,5 +15,13 @@ Before reporting, record at least two issues you found in the CSV and what you r
 1. Issue and recommendation:Repeated row O-1006, we should drop one of them.
 2. Issue and recommendation:Missing customer city in order O-1004,we should handle missing values.
 
+## BigQuery Lab Results
+Raw table: DE_Intro.orders
+- Rows loaded: 8
+- Rows with a missing city: 1
+- Rows with a non-positive quantity: 1
+- Rows returned by the filtered query: 5
+
 ## What the pipeline does
 Complete after the lab: In one sentence, describe how the data moves from the source to a useful output.
+The pipeline ingests raw order data from a CSV file into BigQuery, filters out data quality anomalies, and produces a clean, reliable dataset for the shop manager.
